@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature ⁰ ⇵</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="header__container">
+          <p class="header__text"></p>
+        </div>
+      </section>
+      <section class="content">
+        <h2>Enter the Temperature select units and submit</h2>
+        <div class="data">
+          <div class="data-1">
+            <select name="unit" id="unit" class="a">
+              <option value="F">Fahrenheit</option>
+              <option value="C">Celseus</option>
+              <option value="K">kelvin</option>
+            </select>
+            <input
+              type="number"
+              autofocus
+              class="num__input"
+              placeholder="⁰F"
+            />
+          </div>
+          <button class="change-btn">&UpArrow;&uparrow;</button>
+
+          <div class="data-2">
+            <select name="unit" id="unit" class="b">
+              <option value="F">Fahrenheit</option>
+              <option value="C">Celseus</option>
+              <option value="K">kelvin</option>
+            </select>
+            <input
+              type="number"
+              disabled
+              class="num__display"
+              placeholder="⁰F"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
